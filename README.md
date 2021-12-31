@@ -1,3 +1,3 @@
-# Página de portfólio e serviços (Gabriel Cardoso - Bohr Software)
+# Página de portfólio e serviços | Bohrsoft - Gabriel Cardoso
 
 Este projeto é uma página de portfólio e apresentação de serviços oferecidos por mim.
