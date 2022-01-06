@@ -92,9 +92,10 @@ INICIAL
 SERVIÇOS
 -----*/
 #servicos{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;  
 }
 #servicos h2{
+  color: #000;
   font-weight: bold;
   font-size: 35px;
   text-align: center;
@@ -109,10 +110,10 @@ SERVIÇOS
   width: 100%;
 }
 .card-individual h3{
-  font-weight: 800;
-  font-size: 25px;
+  font-weight: 200;
+  font-size: 30px;
   text-align: center;
-  margin: 0 0 15px 0;
+  margin: 0 20% 15px 20%;
 }
 .card-individual p{
   font-size: 15px;
@@ -148,6 +149,149 @@ SERVIÇOS
   color: #000;
   font-weight: bold;
   background-color: #FFDE59;
+}
+.card-individual a:hover{
+  text-decoration: none;
+  color: #000;
+  background-color: #ffd739;
+}
+
+/*-----
+IMAGENS FOGUETES
+-----*/
+#imgDesign1{
+  transform: rotate(40deg);
+  position: relative;
+  margin: -50px 0 -240px 0;
+  width: 20vw;
+  pointer-events: none;
+}
+#imgDesign2{
+  width: 20vw;
+  pointer-events: none;
+  margin-top: -160px;
+}
+#imgDesign3{
+  position: relative;
+  pointer-events: none;
+  margin: 0 0 -300px 0;
+}
+
+/*-----
+CLIENTES
+-----*/
+#clientes{
+  width: 100%;
+  background: url('img/img-background1.png');
+  background-size: 100%;
+  font-family: 'Poppins', sans-serif;  
+}
+#clientes h2{
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+#clientes > p{
+  font-size: 20px;
+  text-align: center;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+.sites-clientes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sites-clientes img{
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.75);
+}
+#verMaisImg{
+  width: 70%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  display: block;
+  top: -50px;
+  left: 15%;
+  background-color: rgba(100, 100, 100, 0.781);
+  color: #000;
+  position: relative;
+  height: 50px;
+  text-decoration: none;
+}
+.texto-clientes1{
+  align-self: center;
+}
+.texto-clientes1 p{
+  width: 60%;
+  margin: 0 20% 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+/*-----
+REDES SOCIAIS
+-----*/
+.slick-prev:before, .slick-next:before{
+  color: black !important;
+}
+#redes-sociais{
+  background-color: #fff;
+  padding: 0 50px;
+  font-family: 'Poppins', sans-serif;  
+}
+#redes-sociais h2{
+  text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+}
+.sociais-carousel i{
+  color: #FFDE59;
+  background-color: #000;
+  border-radius: 100%;
+  margin: 0 15px;
+  padding: 10px;
+}
+.sociais-carousel h3{
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+}
+.sociais-carousel{
+  text-align: center;
+  background: url('img/img-background2.png');
+  background-size: 100%;
+}
+.sociais-carousel img{
+  display: block;
+  margin: 10px auto;
+  pointer-events: none;
+  border-radius: 100%;
+  width: 15vw;
+}
+.sociais-carousel a {
+  background-color: #FFDE59;
+  width: 40%;
+  display: block;
+  font-weight: 700;
+  border-radius: 1em;
+  padding: 10px;
+  color: #000;
+  margin: 15px 30%;
+}
+.sociais-carousel a:hover{
+  text-decoration: none;
+  color: #000;
+  background-color: #38B6FF;
+}
+.grid-social{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 
