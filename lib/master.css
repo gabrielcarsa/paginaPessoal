@@ -13,6 +13,9 @@ html, body{
 /*-----
 MENU NAV
 -----*/
+#navbarCel{
+  display: none !important;
+}
 .navbar{
   display: grid !important;
   grid-template-columns: 1fr 1fr 1fr;
@@ -47,7 +50,47 @@ MENU NAV
 .bgcolor.scrolled a{
   color: #000 !important;
 }
-  
+.navbar-toggler{
+  float: right;
+  margin-top: 10px;
+}
+
+/*Navbar responsivel*/
+@media all and (max-width: 990px){
+  #navbarCel{
+    display: block !important;
+  }
+  .navbar img{
+    width: 140px;
+  }
+  .nav-link{
+    text-align: center;
+    background-color: #fff;
+  }
+  .dropdown-menu{
+    border: none !important;
+    background-color: rgb(224, 224, 224) !important;
+    margin: 0 !important;
+  }
+  .dropdown-item{
+    padding: 5px !important;
+    text-align: center !important;
+  }
+  #navbarPc{
+    display: none !important;
+  }
+  .nav-link{
+    color: #000 !important;
+  }
+
+}
+
+@media all and (max-width: 380px){
+  .dropdown-item{
+    font-size: 12px;
+  }
+}
+
 
 /*-----
 INICIAL
@@ -87,6 +130,39 @@ INICIAL
   border-radius: 5em;
   width: 100%;
   font-weight: bold;
+}
+
+@media all and (max-width: 380px){
+  #inicial{
+    background: url('img/img-background-cel.png');
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+  }
+  #inicial div{
+    padding: 120px 0;
+    width: 80%;
+    margin: 0 10%;
+  }
+  #inicial h1{
+    width: 100%;
+    font-size: 20px;
+  }
+  #inicial p{
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  #inicial a{
+    font-size: 12px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    width: 100%;
+  }
 }
 /*-----
 SERVIÇOS
@@ -156,6 +232,34 @@ SERVIÇOS
   background-color: #ffd739;
 }
 
+@media all and (max-width: 380px){
+  #servicos h2{
+    font-size: 25px;
+  }
+  .card-individual{
+    margin: 10px 10vw;
+  }
+  .card-individual h3{
+    font-size: 15px;
+    margin: 15px 0;
+  }
+  .card-individual p{
+    font-size: 10px;
+    padding: 0px 2vw 0;
+  }
+  #vantagem{
+    font-size: 13px;
+  }
+  .card-individual ul{
+    padding: 0 2vw 15px;
+    font-size: 12px;
+  }
+  .card-individual a{
+    width: 80%;
+    font-size: 12px;
+  }
+}
+
 /*-----
 IMAGENS FOGUETES
 -----*/
@@ -172,6 +276,18 @@ IMAGENS FOGUETES
   margin-top: -160px;
 }
 
+@media all and (max-width: 380px){
+  #imgDesign1{
+    margin: -190px 0 -240px 0;
+    width: 20vw;
+    pointer-events: none;
+  }
+  #imgDesign2{
+    width: 20vw;
+    pointer-events: none;
+    margin-top: -160px;
+  }
+}
 
 /*-----
 CLIENTES
@@ -229,7 +345,39 @@ CLIENTES
   font-size: 20px;
   color: #000;
 }
-
+@media all and (max-width: 380px){
+  #clientes h2{
+    font-size: 25px;
+    padding: 50px 0 0 0;
+  }
+  #clientes > p{
+    font-size: 15px;
+    padding: 20px 20% 20px 20%;
+  }
+  .sites-clientes{
+    display: block;
+  }
+  .sites-clientes img{
+    width: 90%;
+  }
+  #verMaisImg{
+    width: 90%;
+    font-size: 15px;
+    left: 5%;
+  }
+  .texto-clientes1{
+    padding: 0 2vw 20px;
+    margin: 0;
+    width: 100%;
+    font-size: 15px;
+  }
+  .texto-clientes1 p{
+    padding: 0 2vw;
+    margin: 0;
+    width: 100%;
+    font-size: 15px;
+  }
+}
 /*-----
 REDES SOCIAIS
 -----*/
@@ -290,6 +438,34 @@ REDES SOCIAIS
   grid-template-columns: 1fr 1fr;
 }
 
+@media all and (max-width: 380px){
+  #redes-sociais{
+    padding: 0 25px;
+  }
+  #redes-sociais h2{
+    font-size: 25px;
+  }
+  .sociais-carousel i{
+    margin: 0 5px;
+    padding: 5px;
+  }
+  .sociais-carousel h3{
+    font-size: 18px;
+  }
+  .sociais-carousel{
+    text-align: center;
+    background: url('img/img-background-cel1.png');
+    background-size: 100%;
+  }
+  .sociais-carousel p{
+    font-size: 12px;
+  }
+  .sociais-carousel a {
+    width: 80%;
+    padding: 5px;
+    margin: 15px 10%;
+  }
+}
 
 /*-----
 SOBRE
@@ -299,14 +475,16 @@ SOBRE
   padding-bottom: 50px;
   margin: -50px 0 0;
   font-family: 'Poppins', sans-serif;  
-  transform: rotate(3deg);
+  transform: skewY(-4deg);
+
 }
 #sobre h2{
   text-align: center;
   font-weight: 300;
   padding: 15px 0;
   font-size: 35px;
-  transform: rotate(-3deg);
+  transform: skewY(+4deg);
+
 
 }
 #sobre img{
@@ -319,7 +497,7 @@ SOBRE
 .grid-descricao{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  transform: rotate(-3deg);
+  transform: skewY(+4deg);
 }
 .grid-descricao div{
   align-self: center;
@@ -338,6 +516,29 @@ SOBRE
   padding-bottom: 20px;
 }
 
+@media all and (max-width: 380px){
+  #sobre h2{
+    font-size: 25px;
+  }
+  .grid-descricao{
+    display: block;
+  }
+  .grid-descricao div{
+    font-size: 12px;
+    padding: 0 4vw;
+  }
+  .grid-descricao h3{
+    padding: 15px 0 0;
+    font-size: 18px;
+  }
+  .grid-descricao h4{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .descricao-sobre{
+    font-size: 13px;
+  }
+}
 /*-----
 PORTFÓLIO
 -----*/
@@ -392,6 +593,31 @@ PORTFÓLIO
   font-size: 30vw;
   color: #000 !important;
 }
+@media all and (max-width: 380px){
+  #portfolio h2{
+    font-size: 25px;
+  }
+  #portfolio > div{
+    display: block;
+  }
+  #portfolio div{
+    align-self: center;
+  }
+  #portfolio h3{
+    font-size: 15px;
+  }
+  #portfolio a{
+    width: 70%;
+    font-size: 15px;
+    padding: 5px;
+  }
+  #portfolio p{
+    font-size: 12px;
+  }
+  #portfolio ul{
+    font-size: 12px;
+  }
+}
 
 /*-----
 CONTATO
@@ -411,7 +637,7 @@ CONTATO
 }
 #contato-msg{
   background-color: #38B6FF;
-  width: 400px;
+  width: 25vw;
   height: 80px;
   font-weight: 700;
   font-size: 25px;
@@ -448,6 +674,35 @@ CONTATO
 #contato i{
   padding: 0 5px;
   font-weight: 700;
+}
+
+@media all and (max-width: 380px){
+  #contato{
+    background: url('img/img-background3.png');
+    background-size: 100% !important;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: none;
+  }
+  #contato h2{
+    font-size: 25px;
+  }
+  #contato-msg{
+    width: 70%;
+    height: 60px;
+    font-size: 15px;
+    line-height: 60px;
+  }
+  #contato a{
+    margin: 20px auto 30px;
+    width: 80%;
+    padding: 10px;
+    font-size: 15px;
+  }
+  #contato i{
+    padding: 0 5px;
+    font-weight: 700;
+  }
 }
 /*-----
 RODAPÉ
